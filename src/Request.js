@@ -20,7 +20,6 @@ const request = {
   fetchComedyMovie: `/api/v1/genres/9/movies?`,
   fetchAnimationMovie: `/api/v1/genres/15/movies?`,
   fetchSportMovie: `/api/v1/genres/21/movies?`,
-  fetchCrimeMovie: `/api/v1/genres/1/movies?`,
   fetchSearch: `/api/v1/movies/`
 };
 

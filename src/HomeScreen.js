@@ -6,6 +6,7 @@ import requests from './Request'
 import Row from "./Row";
 
 function HomeScreen() {
+  const user = null
   return (
     <div className="homeScreen">
       <Nav />

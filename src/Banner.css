@@ -84,6 +84,6 @@ padding-bottom: 0.3rem;
 
 .banner__align {
 display: flex;
-align-items: start;
-justify-content: start;
+/* align-items: start; */
+/* justify-content: start; */
 }
