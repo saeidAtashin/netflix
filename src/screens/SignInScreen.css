@@ -12,6 +12,12 @@
     transform: translate(-50% ,-15%);
 }
 
+.signInScreen > h1 {
+  color: #ffffff66;
+  margin-bottom: 16px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px #e509146a solid;
+}
 
 .input__buttom {
   border: 0;
@@ -117,12 +123,18 @@ input:focus {
 }
 
 .form p {
+  color: rgb(255 255 255 / 40%);
 
-  color: #778395;
+  /* color: #778395; */
 }
 
-.form p > a {
+.form p > span {
   color: #e50914;
   padding-left: 4px;
   text-decoration: none;
 }
+.form p > span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

@@ -30,6 +30,7 @@ const passwordRef = useRef(null)
 
   return (
     <div className="signInScreen">
+      <h1>Sign In</h1>
             <form className="form">
               <div className="textbox">
                 <div className="material-symbols-outlined"> email </div>
@@ -42,11 +43,11 @@ const passwordRef = useRef(null)
                 <label>Password</label>
               </div>
         <p>
-          Signed up already?
-          <a href="#">Login here</a>
+          New to Netflix?
+          <span onClick={signIn}>Sign Up now.</span>
         </p>
 
-        <button type="submit" className="input__buttom" >
+        <button type="submit" className="input__buttom" onClick={signIn}>
           SIGN IN
           <span className="material-symbols-outlined"> arrow_forward </span>
         </button>
