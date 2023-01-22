@@ -1,0 +1,128 @@
+
+.signInScreen {
+    position: absolute;
+    max-width: 900px;
+    width: 300px;
+    padding: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+    transform: translate(-50% ,-15%);
+}
+
+
+.input__buttom {
+  border: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.form {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+align-items: center;
+justify-content:center ;
+}
+
+.material-symbols-outlined {
+    margin-right: 8px;
+}
+
+.textbox span {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  left: 0;
+  font-size: 22px;
+  pointer-events: none;
+  color: rgb(255 255 255 / 40%);
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
+.textbox input {
+  padding: 8px 0 8px;
+  border-bottom: 2px solid #2b3442;
+  color: rgb(255 255 255 / 96%);
+  height: 50px;
+}
+
+
+
+
+:is(input:focus, input:valid) ~ label {
+  translate: -40px -40px;
+  scale: 0.875;
+}
+
+input:focus ~ label {
+  color: #e50914;
+}
+
+input:focus {
+  border-color: #e50914;
+}
+
+:is(input:focus, input:valid) ~ span {
+  color: rgb(255 255 255 / 96%);
+}
+
+.textbox label {
+  position: absolute;
+  top: 50%;
+  left: 36px;
+  translate: 0 -50%;
+  color: rgb(255 255 255 / 40%);
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 24px;
+  border-radius: 6px;
+  background: #e50914;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.form p {
+
+  color: #778395;
+}
+
+.form p > a {
+  color: #e50914;
+  padding-left: 4px;
+  text-decoration: none;
+}
