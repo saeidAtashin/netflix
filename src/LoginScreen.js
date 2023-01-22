@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignInScreen from "./SignInScreen";
@@ -50,5 +49,3 @@ const LoginScreen = () => {
 };
 
 export default LoginScreen;
-
-

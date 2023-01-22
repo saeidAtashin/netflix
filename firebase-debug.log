@@ -1,0 +1,34 @@
+[debug] [2023-01-20T23:34:40.556Z] ----------------------------------------------------------------------
+[debug] [2023-01-20T23:34:40.558Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kappa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-20T23:34:40.559Z] CLI Version:   11.19.0
+[debug] [2023-01-20T23:34:40.559Z] Platform:      win32
+[debug] [2023-01-20T23:34:40.559Z] Node Version:  v16.18.0
+[debug] [2023-01-20T23:34:40.560Z] Time:          Sat Jan 21 2023 03:04:40 GMT+0330 (وقت عادی ایران)
+[debug] [2023-01-20T23:34:40.560Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-20T23:34:40.568Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-01-20T23:34:40.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-20T23:34:40.741Z] > authorizing via signed-in user (saeid.kase.atashin@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kappa\Desktop\netflix2
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-01-20T23:35:00.420Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-01-20T23:35:00.730Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\kappa\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
