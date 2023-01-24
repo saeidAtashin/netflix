@@ -23,6 +23,15 @@ const SignInScreen = () => {
 
   const signIn = (e) => {
     e.preventDefault();
+
+    auth.signInWithEmailAndPassword(
+      emailRef.current.value,
+      passwordRef.current.value
+      )
+      .then((authUser) => {
+        console.log(authUser);
+      })
+      .catch((error) => alert(error.massage))
   };
 
   return (
@@ -31,12 +40,12 @@ const SignInScreen = () => {
       <form className="form">
         <div className="textbox">
           <div className="material-symbols-outlined"> email </div>
-          <input type="text" className="input__buttom" required />
+          <input ref={emailRef} type="text" className="input__buttom" required />
           <label>Email</label>
         </div>
         <div className="textbox">
           <div className="material-symbols-outlined"> key </div>
-          <input type="password" className="input__buttom" required />
+          <input ref={passwordRef} type="password" className="input__buttom" required />
           <label>Password</label>
         </div>
         <p>
