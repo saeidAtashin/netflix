@@ -34,13 +34,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        {!user ? (
+        {user ? (
           <LoginScreen />
         ) : (
           <Routes>
-            <Route path="/profile" element={<ProfileScreen/>}> 
+            <Route path="/profile" element={<ProfileScreen/>}/> 
 
-            </Route>
+            <Route path="/login" element={<LoginScreen />}/> 
+
             <Route path="/" element={<HomeScreen />} />
           </Routes>
         )}

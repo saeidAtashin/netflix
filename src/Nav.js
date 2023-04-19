@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Nav.css";
+import { toast } from "react-toastify";
 
 function Nav() {
 
@@ -18,7 +19,9 @@ function Nav() {
     }
 
 useEffect(() => {
- 
+  toast.info(`added  to cart again`, {
+    position: "bottom-left",
+  });
     window.addEventListener('scroll', transitionNavbar)
     return () => window.removeEventListener('scroll', transitionNavbar)
 }, []);
@@ -36,8 +39,9 @@ useEffect(() => {
           className="nav__avatar"
           src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
           alt="logo"
-          onClick={() => navigate('/profile')}
+          onClick={() => navigate('/login')}
         />
+        
       </div>
     </div>
   );

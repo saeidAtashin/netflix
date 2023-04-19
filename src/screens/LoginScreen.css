@@ -36,7 +36,7 @@ background-size: cover;
     text-align: center;
     z-index: 1;
     color: #fff;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .loginScreen__gradient{
@@ -60,6 +60,7 @@ z-index: 10;
 width: 150px;
 object-fit: contain;
 padding-left: 20px;
+cursor: pointer;
 }
 
 .loginScreen__button{
@@ -96,4 +97,38 @@ padding-left: 20px;
     background-color: #e50914;
     color: #fff;
     border: none;
+}
+
+
+
+@media only screen and (max-width: 568px) {
+
+    
+.loginScreen__body >h1 {
+    font-size: 1.325rem;
+    margin-bottom: 20px;
+    }
+
+.loginScreen__body > h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+        }
+
+.loginScreen__body > h2 {
+            font-size: 1rem;
+            font-weight: 300;
+            }
+            
+.loginScreen__body { 
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    /* padding: 20px; */
+}
+
 }

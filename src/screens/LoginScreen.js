@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignInScreen from "./SignInScreen";
+import { useNavigate } from "react-router-dom";
 
 
 const LoginScreen = () => {
+  const navigate = useNavigate()
+
   const [signIn, setSignIn] = useState(false);
   return (
     <div className="loginScreen">
@@ -12,6 +15,8 @@ const LoginScreen = () => {
           className="loginScreen__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
           alt="logo"
+          onClick={() => navigate('/')}
+
         />
         <button onClick={() => setSignIn(true)} className="loginScreen__button">
           Sign In
